@@ -15,7 +15,6 @@ namespace MinecraftPlaytimeCalculator
 
         private string playerName;
         private string dirPath;
-
         private TimeSpan totalPlayTime = new TimeSpan();
 
         private void SearchLogFile(string path)
@@ -49,7 +48,7 @@ namespace MinecraftPlaytimeCalculator
             if (dif != new TimeSpan())
             {
                 totalPlayTime += dif;
-                listBox_output.Items.Add(String.Format("{0:[dd. MM. yyyy] [hh:mm:ss]} : {1}\tminutes", start, dif.TotalMinutes.ToString("0.00")));
+                _ = listBox_output.Items.Add(String.Format("{0:[dd. MM. yyyy] [hh:mm:ss]} : {1}\tminutes", start, dif.TotalMinutes.ToString("0.00")));
             }
         }
 
@@ -71,8 +70,8 @@ namespace MinecraftPlaytimeCalculator
 
             label_playtime.Text = GetTotalPlaytimeString();
 
-            listBox_output.Items.Add("Finished");
-            listBox_output.Items.Add(GetTotalPlaytimeString());
+            _ = listBox_output.Items.Add("Finished");
+            _ = listBox_output.Items.Add(GetTotalPlaytimeString());
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -118,7 +117,6 @@ namespace MinecraftPlaytimeCalculator
 
         private string GetTotalPlaytimeString()
         {
-            //return String.Format("Total playtime: {0} d {1} h {2} m Total hours: {3}", totalPlayTime.Days, totalPlayTime.Hours, totalPlayTime.Minutes, Math.Round(totalPlayTime.TotalHours, 0));
             return String.Format("Total playtime: {0} Total hours: {1}", totalPlayTime, Math.Round(totalPlayTime.TotalHours, 0));
         }
     }
