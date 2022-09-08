@@ -86,7 +86,8 @@
             // 
             // textBox_playerName
             // 
-            this.textBox_playerName.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_playerName.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox_playerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_playerName.Location = new System.Drawing.Point(88, 42);
             this.textBox_playerName.Name = "textBox_playerName";
             this.textBox_playerName.Size = new System.Drawing.Size(407, 20);
@@ -94,7 +95,8 @@
             // 
             // textBox_dir
             // 
-            this.textBox_dir.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox_dir.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox_dir.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_dir.Location = new System.Drawing.Point(88, 16);
             this.textBox_dir.Name = "textBox_dir";
             this.textBox_dir.Size = new System.Drawing.Size(376, 20);
@@ -124,12 +126,13 @@
             // 
             // listBox_output
             // 
-            this.listBox_output.BackColor = System.Drawing.SystemColors.Control;
-            this.listBox_output.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox_output.BackColor = System.Drawing.SystemColors.Window;
+            this.listBox_output.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox_output.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox_output.FormattingEnabled = true;
             this.listBox_output.Location = new System.Drawing.Point(9, 32);
             this.listBox_output.Name = "listBox_output";
-            this.listBox_output.Size = new System.Drawing.Size(486, 221);
+            this.listBox_output.Size = new System.Drawing.Size(486, 210);
             this.listBox_output.TabIndex = 2;
             // 
             // label_playtime

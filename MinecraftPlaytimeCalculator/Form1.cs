@@ -48,7 +48,7 @@ namespace MinecraftPlaytimeCalculator
             if (dif != new TimeSpan())
             {
                 totalPlayTime += dif;
-                _ = listBox_output.Items.Add(String.Format("{0:[dd. MM. yyyy] [hh:mm:ss]} : {1}\tminutes", start, dif.TotalMinutes.ToString("0.00")));
+                _ = listBox_output.Items.Add(String.Format("{0:[dd. MM. yyyy] [hh:mm:ss]} : {1,8} minutes", start, dif.TotalMinutes.ToString("0.00")));
             }
         }
 
